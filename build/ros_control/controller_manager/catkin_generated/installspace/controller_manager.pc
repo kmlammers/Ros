@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: controller_manager
+Description: Description of controller_manager
+Version: 0.9.7
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib -lcontroller_manager
+Requires: controller_interface controller_manager_msgs hardware_interface realtime_tools pluginlib

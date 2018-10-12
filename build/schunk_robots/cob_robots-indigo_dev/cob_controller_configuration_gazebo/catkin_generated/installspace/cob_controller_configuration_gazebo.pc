@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: cob_controller_configuration_gazebo
+Description: Description of cob_controller_configuration_gazebo
+Version: 0.6.3
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

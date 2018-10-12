@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: transmission_interface
+Description: Description of transmission_interface
+Version: 0.9.7
+Cflags: -I/home/lammers/Documents/ros/install/include -I/usr/include
+Libs: -L/home/lammers/Documents/ros/install/lib -ltransmission_interface_parser -ltransmission_interface_loader -ltransmission_interface_loader_plugins /usr/lib/x86_64-linux-gnu/libtinyxml.so
+Requires: pluginlib resource_retriever roscpp

@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: schunk_description
+Description: Description of schunk_description
+Version: 0.6.8
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

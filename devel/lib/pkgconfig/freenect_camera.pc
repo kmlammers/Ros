@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: freenect_camera
+Description: Description of freenect_camera
+Version: 0.4.2
+Cflags: -I/home/lammers/Documents/ros/devel/include
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: camera_info_manager diagnostic_updater dynamic_reconfigure image_transport nodelet roscpp sensor_msgs

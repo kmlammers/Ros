@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: cob_msgs
+Description: Description of cob_msgs
+Version: 0.6.8
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: diagnostic_msgs message_runtime std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: schunk_pg70
+Description: Description of schunk_pg70
+Version: 0.5.0
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

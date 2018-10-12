@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: segway_rmp
+Description: Description of segway_rmp
+Version: 0.1.2
+Cflags: -I/home/lammers/Documents/ros/devel/include -I/usr/local/include
+Libs: -L/home/lammers/Documents/ros/devel/lib /usr/local/lib/libsegwayrmp.a /usr/local/lib/libftd2xx.so -ldl
+Requires: geometry_msgs message_runtime nav_msgs roscpp serial std_msgs tf urdf rmp_description xacro rmp_description

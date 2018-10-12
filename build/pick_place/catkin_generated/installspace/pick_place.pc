@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: pick_place
+Description: Description of pick_place
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: geometry_msgs moveit_core libpcan moveit_ros_planning_interface roscpp roscpp std_msgs moveit_visual_tools visualization_msgs

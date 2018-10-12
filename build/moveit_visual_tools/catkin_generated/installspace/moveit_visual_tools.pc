@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: moveit_visual_tools
+Description: Description of moveit_visual_tools
+Version: 3.4.0
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib -lmoveit_visual_tools
+Requires: rviz_visual_tools moveit_ros_planning moveit_core geometry_msgs visualization_msgs graph_msgs std_msgs trajectory_msgs

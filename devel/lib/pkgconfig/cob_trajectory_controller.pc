@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: cob_trajectory_controller
+Description: Description of cob_trajectory_controller
+Version: 0.6.17
+Cflags: -I/home/lammers/Documents/ros/devel/include
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: 

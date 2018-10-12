@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: cob_calibration_data
+Description: Description of cob_calibration_data
+Version: 0.6.9
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

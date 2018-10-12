@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: position_controllers
+Description: Description of position_controllers
+Version: 0.9.4
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib -lposition_controllers
+Requires: controller_interface forward_command_controller

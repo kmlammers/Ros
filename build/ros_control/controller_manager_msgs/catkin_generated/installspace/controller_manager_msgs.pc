@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: controller_manager_msgs
+Description: Description of controller_manager_msgs
+Version: 0.9.7
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: std_msgs message_runtime

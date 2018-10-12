@@ -1,0 +1,2 @@
+set(cob_msgs_MESSAGE_FILES "/home/lammers/Documents/ros/src/cob_common/cob_msgs/msg/AccessPoint.msg;/home/lammers/Documents/ros/src/cob_common/cob_msgs/msg/DashboardState.msg;/home/lammers/Documents/ros/src/cob_common/cob_msgs/msg/EmergencyStopState.msg;/home/lammers/Documents/ros/src/cob_common/cob_msgs/msg/Network.msg;/home/lammers/Documents/ros/src/cob_common/cob_msgs/msg/PowerState.msg;/home/lammers/Documents/ros/src/cob_common/cob_msgs/msg/SiteSurvey.msg")
+set(cob_msgs_SERVICE_FILES "")

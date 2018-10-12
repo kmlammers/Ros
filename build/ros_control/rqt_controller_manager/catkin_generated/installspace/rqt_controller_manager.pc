@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: rqt_controller_manager
+Description: Description of rqt_controller_manager
+Version: 0.9.7
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

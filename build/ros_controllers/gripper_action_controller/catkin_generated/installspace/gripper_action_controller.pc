@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: gripper_action_controller
+Description: Description of gripper_action_controller
+Version: 0.9.4
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib -lgripper_action_controller
+Requires: actionlib cmake_modules control_msgs controller_interface hardware_interface realtime_tools

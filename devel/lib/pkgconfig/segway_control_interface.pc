@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: segway_control_interface
+Description: Description of segway_control_interface
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: geometry_msgs moveit_core moveit_ros_planning_interface roscpp roscpp std_msgs moveit_visual_tools

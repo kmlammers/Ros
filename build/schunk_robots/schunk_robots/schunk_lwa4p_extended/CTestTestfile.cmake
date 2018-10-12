@@ -1,0 +1,8 @@
+# CMake generated Testfile for 
+# Source directory: /home/lammers/Documents/ros/src/schunk_robots/schunk_robots/schunk_lwa4p_extended
+# Build directory: /home/lammers/Documents/ros/build/schunk_robots/schunk_robots/schunk_lwa4p_extended
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(_ctest_schunk_lwa4p_extended_roslaunch-check_launch "/home/lammers/Documents/ros/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/lammers/Documents/ros/build/test_results/schunk_lwa4p_extended/roslaunch-check_launch.xml" "--return-code" "/usr/bin/cmake -E make_directory /home/lammers/Documents/ros/build/test_results/schunk_lwa4p_extended" "/opt/ros/kinetic/share/roslaunch/cmake/../scripts/roslaunch-check -o '/home/lammers/Documents/ros/build/test_results/schunk_lwa4p_extended/roslaunch-check_launch.xml' '/home/lammers/Documents/ros/src/schunk_robots/schunk_robots/schunk_lwa4p_extended/launch' ")
+add_test(_ctest_schunk_lwa4p_extended_rostest_urdf_test_urdf.test "/home/lammers/Documents/ros/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/lammers/Documents/ros/build/test_results/schunk_lwa4p_extended/rostest-urdf_test_urdf.xml" "--return-code" "/opt/ros/kinetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/lammers/Documents/ros/src/schunk_robots/schunk_robots/schunk_lwa4p_extended --package=schunk_lwa4p_extended --results-filename urdf_test_urdf.xml --results-base-dir \"/home/lammers/Documents/ros/build/test_results\" /home/lammers/Documents/ros/src/schunk_robots/schunk_robots/schunk_lwa4p_extended/urdf/test/urdf.test ")

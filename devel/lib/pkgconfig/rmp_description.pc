@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: rmp_description
+Description: Description of rmp_description
+Version: 0.0.2
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: urdf

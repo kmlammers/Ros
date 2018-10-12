@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: velodyne_msgs
+Description: Description of velodyne_msgs
+Version: 1.3.0
+Cflags: -I/home/lammers/Documents/ros/devel/include
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: message_runtime std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: controller_manager_tests
+Description: Description of controller_manager_tests
+Version: 0.9.7
+Cflags: -I/home/lammers/Documents/ros/src/ros_control/controller_manager_tests/include
+Libs: -L/home/lammers/Documents/ros/devel/lib -lcontroller_manager_tests
+Requires: controller_manager controller_interface control_toolbox

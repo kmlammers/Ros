@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: forward_command_controller
+Description: Description of forward_command_controller
+Version: 0.9.4
+Cflags: -I/home/lammers/Documents/ros/src/ros_controllers/forward_command_controller/include
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: controller_interface hardware_interface std_msgs realtime_tools

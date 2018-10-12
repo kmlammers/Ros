@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: lwa_lab_robot
+Description: Description of lwa_lab_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

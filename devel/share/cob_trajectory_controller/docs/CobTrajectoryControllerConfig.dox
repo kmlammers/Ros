@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~ptp_vel" : \b [double] ptp_vel [rad/sec] min: 0.0, default: 1.0, max: 1.4
+- \b "~ptp_acc" : \b [double] ptp_acc [rad/sec^2] min: 0.0, default: 0.2, max: 1.0
+- \b "~max_error" : \b [double] max_error [rad] min: 0.0, default: 0.25, max: 1.0
+- \b "~overlap_time" : \b [double] overlap_time [sec] min: 0.0, default: 0.4, max: 3.0
+- \b "~operation_mode" : \b [int] current operation mode min: 0, default: 1, max: 2
+

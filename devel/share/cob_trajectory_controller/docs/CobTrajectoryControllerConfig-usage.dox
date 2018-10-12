@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="cob_trajectory_controller" pkg="cob_trajectory_controller" type="cob_trajectory_controller">
+  <param name="ptp_vel" type="double" value="1.0" />
+  <param name="ptp_acc" type="double" value="0.2" />
+  <param name="max_error" type="double" value="0.25" />
+  <param name="overlap_time" type="double" value="0.4" />
+  <param name="operation_mode" type="int" value="1" />
+</node>
+\endverbatim
+

@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: schunk_simulated_tactile_sensors
+Description: Description of schunk_simulated_tactile_sensors
+Version: 0.6.8
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

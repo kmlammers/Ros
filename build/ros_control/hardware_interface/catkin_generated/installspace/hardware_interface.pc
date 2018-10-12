@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: hardware_interface
+Description: Description of hardware_interface
+Version: 0.9.7
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: roscpp

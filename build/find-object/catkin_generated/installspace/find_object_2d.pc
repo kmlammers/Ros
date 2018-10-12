@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: find_object_2d
+Description: Description of find_object_2d
+Version: 0.6.2
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: cv_bridge roscpp rospy sensor_msgs std_msgs image_transport message_filters tf

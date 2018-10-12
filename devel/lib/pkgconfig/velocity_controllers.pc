@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: velocity_controllers
+Description: Description of velocity_controllers
+Version: 0.9.4
+Cflags: -I/home/lammers/Documents/ros/src/ros_controllers/velocity_controllers/include
+Libs: -L/home/lammers/Documents/ros/devel/lib -lvelocity_controllers
+Requires: angles control_msgs control_toolbox controller_interface forward_command_controller realtime_tools urdf

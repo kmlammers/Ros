@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: rqt_joint_trajectory_controller
+Description: Description of rqt_joint_trajectory_controller
+Version: 0.9.4
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: 

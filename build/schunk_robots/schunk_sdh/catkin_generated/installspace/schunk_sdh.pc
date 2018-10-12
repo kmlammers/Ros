@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: schunk_sdh
+Description: Description of schunk_sdh
+Version: 0.6.8
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: std_msgs message_runtime

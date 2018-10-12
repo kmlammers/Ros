@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/devel
+
+Name: cob_bringup_sim
+Description: Description of cob_bringup_sim
+Version: 0.6.10
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/devel/lib 
+Requires: 

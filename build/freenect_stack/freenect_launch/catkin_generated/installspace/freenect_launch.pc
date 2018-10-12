@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: freenect_launch
+Description: Description of freenect_launch
+Version: 0.4.2
+Cflags: 
+Libs: -L/home/lammers/Documents/ros/install/lib 
+Requires: 

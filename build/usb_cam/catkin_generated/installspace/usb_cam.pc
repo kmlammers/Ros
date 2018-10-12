@@ -1,0 +1,8 @@
+prefix=/home/lammers/Documents/ros/install
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.6
+Cflags: -I/home/lammers/Documents/ros/install/include
+Libs: -L/home/lammers/Documents/ros/install/lib -lusb_cam
+Requires: 
