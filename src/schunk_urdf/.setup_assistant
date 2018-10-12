@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: schunk_hardware_config
+    relative_path: lwa/urdf/lwa.urdf.xacro
+    use_jade_xacro: true
+  SRDF:
+    relative_path: config/lwa.srdf
+  CONFIG:
+    author_name: asdf
+    author_email: hi@hi.com
+    generated_timestamp: 1533143757

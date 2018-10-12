@@ -1,0 +1,53 @@
+<!--<launch>
+	
+	
+  <arg name="moveit_controller_manager" default="pr2_moveit_controller_manager/Pr2MoveItControllerManager"/>
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+  <arg name="controller_manager_name" default="pr2_controller_manager" />
+  <param name="controller_manager_name" value="$(arg controller_manager_name)"/>
+
+  <arg name="use_controller_manager" default="true" />
+  <param name="use_controller_manager" value="$(arg use_controller_manager)" /> 
+	
+	
+  <include file="$(find pr2_controller_manager)/controller_manager.launch" />
+	
+  <node name="arm_controller_spawner" pkg="pr2_controller_manager" type="spawner" args="arm_controller" />
+
+   <group ns="arm_controller"> 
+	   <node name="arm_joint_trajectory_action_node" pkg="joint_trajectory_action" type="joint_trajectory_action" />
+	   
+   </group>
+	
+  <rosparam file="$(find schunk_urdf)/config/controllers.yaml"/>
+	
+</launch>  -->
+
+<!--<launch>
+	
+  <arg name="moveit_controller_manager" default="pr2_moveit_controller_manager/Pr2MoveItControllerManager"/>
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+  <arg name="controller_manager_name" default="pr2_controller_manager" />
+  <param name="controller_manager_name" value="$(arg controller_manager_name)"/>
+
+  <arg name="use_controller_manager" default="true" />
+  <param name="use_controller_manager" value="$(arg use_controller_manager)" />
+
+  <rosparam file="$(find schunk_urdf)/config/controllers.yaml"/>
+	
+</launch> --> 
+
+<!-- -->
+<launch>
+
+	<arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
+	
+	<param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+	
+	<param name="trajectory_execution/execution_duration_monitoring" value="false" />
+
+ 	<rosparam file="$(find schunk_urdf)/config/controllers.yaml"/>
+
+</launch> 

@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="lwa">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="group1">
+		<joint name="arm_base_joint" />
+        <joint name="arm_1_joint" />
+        <joint name="arm_2_joint" />
+        <joint name="arm_3_joint" />
+        <joint name="arm_4_joint" />
+        <joint name="arm_5_joint" />
+        <joint name="arm_6_joint" />
+        <joint name="arm_7_joint" />
+    </group>
+
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define stastes like 'folded arms'-->
+    <group_state name="pose1" group="group1">
+        <joint name="arm_1_joint" value="0" />
+        <joint name="arm_2_joint" value="0" />
+        <joint name="arm_3_joint" value="0" />
+        <joint name="arm_4_joint" value="0" />
+        <joint name="arm_5_joint" value="0" />
+        <joint name="arm_6_joint" value="0" />
+        <joint name="arm_7_joint" value="0" />
+    </group_state>
+	
+	<group_state name="camera_view" group="group1">
+        <joint name="arm_1_joint" value="-0.35314494371414185" />
+        <joint name="arm_2_joint" value="-1.9699019193649292" />
+        <joint name="arm_3_joint" value="0.10494908690452576" />
+        <joint name="arm_4_joint" value="-0.36631494760513306" />
+        <joint name="arm_5_joint" value="-1.9423807859420776" />
+        <joint name="arm_6_joint" value="-1.410415768623352" />
+        <joint name="arm_7_joint" value=" 1.622245192527771" />
+    </group_state>
+	
+	<group_state name="pickup_1" group="group1">
+        <joint name="arm_1_joint" value="0.2716361880302429" />
+        <joint name="arm_2_joint" value="-1.1944580078125" />
+        <joint name="arm_3_joint" value="-0.6700390577316284" />
+        <joint name="arm_4_joint" value="-1.9669605493545532" />
+        <joint name="arm_5_joint" value="-0.511021077632904" />
+        <joint name="arm_6_joint" value="0.8198248147964478" />
+        <joint name="arm_7_joint" value=" 0.7702033519744873" />
+    </group_state>
+	
+	<group_state name="pickup_2" group="group1">
+        <joint name="arm_1_joint" value="0.8555576205253601" />
+        <joint name="arm_2_joint" value="-1.184751033782959" />
+        <joint name="arm_3_joint" value="-0.6207206845283508" />
+        <joint name="arm_4_joint" value="-1.8895857334136963" />
+        <joint name="arm_5_joint" value="-0.02699379436671734" />
+        <joint name="arm_6_joint" value="0.40286943316459656" />
+        <joint name="arm_7_joint" value="0.7930322289466858" />
+    </group_state>
+	
+	<group_state name="set_1" group="group1">
+        <joint name="arm_1_joint" value="0.9008864760398865" />
+        <joint name="arm_2_joint" value="-1.1066323518753052" />
+        <joint name="arm_3_joint" value="0.06964634358882904" />
+        <joint name="arm_4_joint" value="-0.9555293321609497" />
+        <joint name="arm_5_joint" value="-1.0346084833145142" />
+        <joint name="arm_6_joint" value="0.7830249071121216" />
+        <joint name="arm_7_joint" value="1.6009870767593384" />
+    </group_state>
+
+	<group_state name="set_2" group="group1">
+        <joint name="arm_1_joint" value="-0.46919646859169006" />
+        <joint name="arm_2_joint" value="-0.9501686096191406" />
+        <joint name="arm_3_joint" value="0.042760010808706284" />
+        <joint name="arm_4_joint" value="-1.1468521356582642" />
+        <joint name="arm_5_joint" value="-1.8726966381072998" />
+        <joint name="arm_6_joint" value=" -1.2555444240570068" />
+        <joint name="arm_7_joint" value="1.4106274843215942" />
+    </group_state>
+
+	
+	
+	
+	
+	
+	
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="end" parent_link="arm_7_link" group="group1" />
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="base" type="fixed" parent_frame="world" child_link="world" />
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="arm_1_link" link2="arm_2_link" reason="Adjacent" />
+    <disable_collisions link1="arm_1_link" link2="arm_3_link" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="arm_4_link" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="arm_base_link" reason="Adjacent" />
+   
+    <disable_collisions link1="arm_2_link" link2="arm_3_link" reason="Adjacent" />
+    <disable_collisions link1="arm_2_link" link2="arm_4_link" reason="Never" />
+    <disable_collisions link1="arm_2_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="arm_2_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="arm_2_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="arm_2_link" link2="arm_base_link" reason="Never" />
+
+    <disable_collisions link1="arm_3_link" link2="arm_4_link" reason="Adjacent" />
+    <disable_collisions link1="arm_3_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="arm_3_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="arm_3_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="arm_3_link" link2="arm_base_link" reason="Never" />
+
+    <disable_collisions link1="arm_4_link" link2="arm_5_link" reason="Adjacent" />
+    <disable_collisions link1="arm_4_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="arm_4_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="arm_4_link" link2="arm_base_link" reason="Never" />
+   
+    <disable_collisions link1="arm_5_link" link2="arm_6_link" reason="Adjacent" />
+    <disable_collisions link1="arm_5_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="arm_5_link" link2="arm_base_link" reason="Never" />
+   
+    <disable_collisions link1="arm_6_link" link2="arm_7_link" reason="Adjacent" />
+    <disable_collisions link1="arm_6_link" link2="arm_base_link" reason="Never" />
+
+    <disable_collisions link1="arm_7_link" link2="arm_base_link" reason="Never" />
+  
+</robot>

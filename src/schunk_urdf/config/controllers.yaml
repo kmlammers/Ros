@@ -1,0 +1,20 @@
+controller_manager_ns: pr2_controller_manager
+controller_list:
+  - name: arm_controller
+    action_ns: joint_trajectory_controller/follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+     - arm_1_joint
+     - arm_2_joint
+     - arm_3_joint
+     - arm_4_joint
+     - arm_5_joint
+     - arm_6_joint
+     - arm_7_joint
+# trajectory controller parameters
+ptp_vel: 0.4 # rad/sec
+ptp_acc: 0.2 # rad/sec^2
+max_error: 0.15 # rad
+operation_mode: velocity
+frequency: 100
